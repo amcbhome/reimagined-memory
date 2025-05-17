@@ -1,21 +1,9 @@
-# reimagined-memory
-# 📚 IFRS for SMEs Search App (2025 Edition)
+## 📖 Preparing the IFRS Data File
 
-This Streamlit web application allows users to search through the IFRS for SMEs (2025 Edition) Accounting Standards using keyword-based search. 
+If `ifrs_smes_full_text.csv` is not already included, generate it using the official IFRS for SMEs PDF.
 
----
+1. Place the official PDF file (`ifrs-for-smes.pdf`) in the project directory.
 
-## 🚀 Features
-- Fast and efficient keyword search.
-- Highlights matched terms in the results.
-- Adjustable case sensitivity and result limits.
-- Simple, clean Streamlit interface.
-
----
-
-## 📦 Installation
-
-1. **Clone the Repository**
+2. Run the extraction script:
 ```bash
-git clone https://github.com/your-username/ifrs-search-app.git
-cd ifrs-search-app
+python extract_ifrs_pdf.py
